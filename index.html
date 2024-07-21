@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <label for="task-input">To-Do List Hari Ini</label>
+        <textarea id="task-input" rows="3"></textarea>
+        
+        <label for="priority">Prioritas</label>
+        <select id="priority">
+            <option value="Tinggi">Tinggi</option>
+            <option value="Menengah">Sedang</option>
+            <option value="Rendah">Rendah</option>
+        </select>
+        
+        <button onclick="addTask()">Tambah Tugas</button>
+        
+        <ul class="task-list" id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
